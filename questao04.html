@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 04</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .campo {
+            margin-bottom: 12px;
+        }
+
+        input {
+            padding: 7px;
+            width: 260px;
+        }
+
+        #btn-validar {
+            padding: 10px;
+            width: 260px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #btn-validar:hover {
+            background-color: #0056b3;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <div class="campo">
+        Nome completo:<br>
+        <input type="text" id="nome">
+    </div>
+
+    <div class="campo">
+        Data de nascimento:<br>
+        <input type="date" id="dataNasc">
+    </div>
+
+    <div class="campo">
+        CPF:<br>
+        <input type="text" id="cpf" placeholder="000.000.000-00">
+    </div>
+
+    <div class="campo">
+        E-mail:<br>
+        <input type="email" id="email">
+    </div>
+
+    <div class="campo">
+        Telefone:<br>
+        <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx">
+    </div>
+
+    <button id="btn-validar" onclick="validarFormulario()">Validar Cadastro</button>
+
+    <p id="mensagem"></p>
+
+    <script src="questao04.js"></script>
+</body>
+</html>
